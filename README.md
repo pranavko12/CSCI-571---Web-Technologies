@@ -1,4 +1,6 @@
-# Course Description:
+# CSCI-571 -- Web-Technologies
+
+## Course Description:
 This course focuses on the World Wide Web. Its focus is to present many of the core technologies that the Web is based upon. 
 ### These core technologies include:
 - HTML (HyperText Markup Language) and CSS (Cascading Style Sheets)
