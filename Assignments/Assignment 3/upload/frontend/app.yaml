@@ -1,0 +1,11 @@
+runtime: nodejs18
+service: frontend-service
+env: standard
+
+instance_class: F2
+
+entrypoint: npx serve -s build
+
+handlers:
+  - url: /.*
+    script: auto

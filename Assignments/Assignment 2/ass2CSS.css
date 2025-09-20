@@ -1,0 +1,381 @@
+body{
+  background-color: #E5E4E2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main{
+  font-family: Arial;
+  font-weight: normal;
+  background-color: white;
+  width: 560px;
+  height: 400px;
+  align-items: center;
+}
+
+.box {
+  color: black;
+  height: 400px;
+}
+
+.sky{
+  background-image: url("Images/Images/banner.jpg");
+  background-position: right;
+  height: 120px;
+  width: 560px;
+}
+
+.text{
+  padding-top: 10px;
+  padding-left: 30px;
+  color: #36454F;
+  font-size: 16px;
+}
+
+.street{
+  width: 500px;
+  padding-top: 5px;
+}
+
+.state{
+  width: 280px;
+}
+
+.city{
+  padding-top: 5px;
+  width: 180px;
+}
+
+.details {
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.label_detail{
+  display: flex;
+  justify-content: space-between;
+  width: 265px;
+  padding-bottom: 5px;
+}
+
+.text_detail{
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
+
+.label{
+  padding-top: 20px;
+  color: #0047AB;
+}
+
+.hr{
+  width: 500px;
+}
+
+.asterik{
+  color: #FAA0A0;
+}
+
+.location{
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.button{
+  padding-left: 30px;
+}
+
+#submit{
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  background-color: #6082B6;
+}
+
+
+.clear{
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  background-color: #f39c12;
+}
+
+#error_message {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #466982;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: white;
+  width: 540px;
+}
+
+
+.humidity-icon {
+    width: 24px;
+    height: 24px;
+    background-image: url('Images/Images/humidity.png');
+    background-size: cover;
+}
+
+.pressure-icon {
+    width: 24px;
+    height: 24px;
+    background-image: url('Images/Images/Pressure.png');
+    background-size: cover;
+}
+
+.wind-speed-icon {
+    width: 24px;
+    height: 24px;
+    background-image: url('Images/Images/Wind_Speed.png');
+    background-size: cover;
+}
+
+.visibility-icon {
+    width: 24px;
+    height: 24px;
+    background-image: url('Images/Images/Visibility.png');
+    background-size: cover;
+}
+
+.cloud-cover-icon {
+    width: 24px;
+    height: 24px;
+    background-image: url('Images/Images/Cloud_Cover.png');
+    background-size: cover;
+}
+
+.uv-level-icon {
+    width: 24px;
+    height: 24px;
+    background-image: url('Images/Images//UV_Level.png');
+    background-size: cover;
+}
+
+#weather_result {
+    background-color: white;
+    width: 640px;
+    margin-top: 20px;
+    margin-left: -80px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+    align-items: center;
+    padding-right: 100px;
+}
+
+#weather_result:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#location_display {
+    align-content: flex-start;
+    font-size: 24px;
+    margin-left: 0px;
+    color: #333;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+#felx{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 10px;
+}
+
+#weather_temp {
+    font-size: 72px;
+    font-weight: 300;
+    color: #808080;
+    padding-left: 300px;
+}
+
+#weather_icon img {
+    align-items: flex-start;
+    padding-left: 30px;
+    width: 100px;
+    height: 100px;
+}
+
+#weather_summary {
+    font-size: 24px;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    color: #333;
+    margin-top: 10px;
+    padding-left: 30px;
+}
+
+.weather_details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    text-align: center;
+    width: 580px;
+}
+
+.detail {
+  flex: 1 1 40px;
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding-left: 30px;
+}
+
+.detail p{
+  text-align: center;
+  white-space: nowrap;
+}
+
+.detail span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.weather_details img {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 5px;
+}
+
+#seven_day {
+    width: 940px;
+    margin-top: 20px;
+    margin-left: -150px;
+}
+
+#seven_day table {
+    width: 940px;
+    border-collapse: separate;
+    border-spacing: 0px 10px;
+    table-layout: fixed;
+}
+
+#seven_day th, #seven_day td {
+    border: none;
+    padding: 0px 12px;
+    text-align: center;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+#seven_day th {
+    background-color: #0047AB;
+    color: black;
+    font-size: 18px;
+}
+
+#seven_day td {
+    background-color: white;
+    color: #333;
+}
+
+#seven_day td:nth-child(2) {
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+}
+
+#seven_day td:nth-child(2) img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    align-items: center;
+}
+
+
+#daily_weather {
+    margin-top: 20px;
+}
+
+
+.daily_card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#daily_weather h2{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.daily_card {
+    background: linear-gradient(to bottom, white, #1b294a);
+    padding-left: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 540px;
+    height: 440px;
+    align-items: center;
+}
+
+.upper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+#daily_date, #daily_temp, #daily_status{
+    color: #1b294a;
+    font-size: 24px;
+}
+
+.vertical{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#daily_icon {
+    width: 200px;
+    height: 200px;
+}
+
+.additional_details {
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 0px;
+    color: white;
+}
+
+.additional_details p {
+    font-size: 14px;
+}
+
+#pointer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+#graphs h2{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#temperature_chart, #hourly_chart {
+    width: 900px;
+    height: 400px;
+    margin-left: -150px;
+}

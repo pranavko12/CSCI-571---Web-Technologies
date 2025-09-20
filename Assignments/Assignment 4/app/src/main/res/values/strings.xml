@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Assignment4-pkolhe_mobile</string>
+    <string name="tomorrow_logo">Tomorrow.io logo</string>
+    <string name="temperature_format">Temperature: %1$s°F</string>
+    <string name="weather_icon">Weather Icon</string>
+    <string name="humidity_format">Humidity: %1$s%%</string>
+    <string name="wind_speed_format">Wind Speed: %1$s mph</string>
+    <string name="visibility_format">Visibility: %1$s mi</string>
+    <string name="pressure_format">Pressure: %1$s inHg</string>
+    <string name="clear">Clear</string>
+    <string name="mostly_clear">Mostly Clear</string>
+    <string name="partly_cloudy">Partly Cloudy</string>
+    <string name="unknown">Unknown</string>
+    <string name="temperature">Temperature</string>
+    <string name="wind_speed">Wind Speed</string>
+    <string name="visibility">Visibility</string>
+    <string name="pressure">Pressure</string>
+    <string name="summary">Weather Summary</string>
+    <string name="city_name">City Name</string>
+    <string name="humidity">Humidity</string>
+    <string name="summary_text">%1$s</string>
+    <string name="city_name_text">%1$s</string>
+    <string name="min_temp_format">Min: %1$s°F</string>
+    <string name="max_temp_format">Max: %1$s°F</string>
+
+
+</resources>
+

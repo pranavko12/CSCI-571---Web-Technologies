@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <GridLayout
+        android:id="@+id/today_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:padding="16dp"
+        android:rowCount="3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:background="#252525"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/wind_speed_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/windspeedicon_foreground"
+                android:contentDescription="wind_speed" />
+
+            <TextView
+                android:id="@+id/wind_speed_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/wind_speed_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wind Speed"
+                android:textColor="#AAAAAA"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:background="#252525"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/pressure_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/pressureicon_foreground"
+                android:contentDescription="pressure" />
+
+            <TextView
+                android:id="@+id/pressure_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/pressure_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pressure"
+                android:textColor="#AAAAAA"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:background="#252525"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/precipitation_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/precipitation"
+                android:contentDescription="precipitation" />
+
+            <TextView
+                android:id="@+id/precipitation_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/precipitation_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Precipitation"
+                android:textColor="#AAAAAA"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:background="#252525"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/temperature_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/temperature"
+                android:contentDescription="temperature" />
+
+            <TextView
+                android:id="@+id/temperature_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/temperature_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temperature"
+                android:textColor="#AAAAAA"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="124dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:background="#252525"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/icon_weather"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="weather_icon" />
+
+            <TextView
+                android:id="@+id/icon_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:background="#252525"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/humidity_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/humidityicon_foreground"
+                android:contentDescription="humidity" />
+
+            <TextView
+                android:id="@+id/humidity_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/humidity_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Humidity"
+                android:textColor="#AAAAAA"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:background="#252525"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/visibility_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/visibilityicon_foreground"
+                android:contentDescription="visibility" />
+
+            <TextView
+                android:id="@+id/visibility_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/visibility_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Visibility"
+                android:textColor="#AAAAAA"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:background="#252525"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/cloud_cover_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/cloud_cover"
+                android:contentDescription="cloud_cover" />
+
+            <TextView
+                android:id="@+id/cloud_cover_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/cloud_cover_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cloud Cover"
+                android:textColor="#AAAAAA"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            android:background="#252525"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/uv_index_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/uv_index"
+                android:contentDescription="uv_index" />
+
+            <TextView
+                android:id="@+id/uv_index_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/uv_index_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UV Index"
+                android:textColor="#AAAAAA"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </GridLayout>
+</ScrollView>

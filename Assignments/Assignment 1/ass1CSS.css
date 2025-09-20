@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 1600px 853px;
+    font-family: 'Montserrat';
+}
+
+
+nav {
+    font-family: 'Montserrat';
+    background-color: white;
+    padding: 45px 60px;
+    top: 0;
+    width: 1480px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width:1000px;
+    align-items: center;
+}
+
+.menu{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+.menu_sub {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.menu_sub li a{
+    text-decoration: none;
+    color: grey;
+    font-size: 12px;
+}
+
+
+.image {
+    width: 1600px;
+    background-image: url('images/images/lawyer.jpg');
+    background-size: 1600px 853px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    filter: brightness(0.9);
+    height: 715px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 265px;
+}
+
+.box {
+    background-color: #093b67;
+    color: white;
+    padding: 40px;
+    padding-top: 50px;
+    height: 340px;
+    width: 290px;
+}
+
+.wait {
+    font-family: 'Montserrat';
+    font-weight: normal;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.improve {
+    font-family: 'Montserrat';
+    font-weight: normal;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.bizz {
+    font-family: 'Montserrat';
+    font-size: 12px;
+    margin-bottom: 20px;
+    color: #FFF500;
+    font-style: italic;
+}
+
+.box form {
+    flex-direction: column;
+}
+
+.box input[type="text"] {
+    padding: 14px;
+    margin-bottom: 16px;
+    border: none;
+    font-size: 21px;
+}
+
+.box button {
+    font-family: 'Montserrat';
+    padding: 16px;
+    background-color: #FFEA00;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+
+.info2{
+  font-family: 'Montserrat';
+  padding: 130px 280px;
+  padding-bottom: 100px;
+  padding-right: 120px;
+  list-style-type: none;
+  width: 1600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head1{
+  font-size: 14px;
+  font-weight: normal;
+  padding-bottom: 20px;
+}
+
+.p1{
+  font-size: 12px;
+  font-weight: 700;
+  color: Grey;
+  display: flex;
+  padding-right: 40px;
+  text-align: justify;
+}
+
+.grey{
+  font-family: 'Monsterrat';
+  background-color: #F0F0F0;
+  padding-top: 120px;
+  padding-bottom: 160px;
+  width: 1600px;
+  text-align: center;
+}
+
+.Opta{
+  font-size: 19px;
+  font-weight: normal;
+  padding: 20px;
+  padding-right: 40px;
+}
+
+.ceo{
+  font-size: 11px;
+  display: flex;
+  justify-content: center;
+  padding-right: 50px;
+}
+.name{
+  white-space: pre;
+  font-weight: bold;
+}
+
+.title{
+  color: Grey;
+  font-weight: bold;
+}
+
+
+.laptop{
+  position: relative;
+  width: 1600px;
+  height: 800px;
+  z-index: 0;
+}
+
+.laptop::before{
+  background-image: url('images/images/glasses.png');
+  filter: grayscale(1);
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  width: 1600px;
+  height: 800px;
+  content: '';
+  background-size: cover;
+  position: absolute;
+  background-attachment: fixed;
+  background-position: center;
+  z-index: 0;
+}
+
+.over{
+
+}
+
+.plans{
+  position: relative;
+  text-align: center;
+  font-family: 'Montserrat';
+  padding-top: 80px;
+}
+
+.heading{
+  font-weight: normal;
+  padding-bottom: 10px;
+  font-size: 24px;
+}
+
+.state{
+  font-weight: normal;
+  font-size: 14px;
+  color: Grey;
+}
+
+.container{
+  position: relative;
+  font-family: 'Montserrat';
+  font-weight: normal;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 250px;
+  width: 1020px;
+}
+
+.packages{
+  position: relative;
+  background-color: white;
+  background-image:
+    repeating-linear-gradient(90deg, rgba(200,200,200,0.5), rgba(200,200,200,0.5) 0.5px, transparent 1px, transparent 10px),
+    repeating-linear-gradient(0deg, rgba(200,200,200,0.5), rgba(200,200,200,0.5) 0.5px, transparent 1px, transparent 10px),
+    repeating-linear-gradient(45deg, rgba(200,200,200,0.5), rgba(200,200,200,0.5) 0.5px, transparent 1px, transparent 10px),
+    repeating-linear-gradient(-45deg, rgba(200,200,200,0.5), rgba(200,200,200,0.5) 0.5px, transparent 1px, transparent 10px);
+  align-items: center;
+  text-align: center;
+  width: 270px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.packages h6{
+  padding-top: 0px;
+  font-size: 16px;
+  color: #000;
+}
+
+.packages ul{
+  list-style-type: none;
+  padding-bottom: 20px;
+}
+
+.packages ul li {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.price {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #000;
+    font-size: 24px;
+    font-family: 'Arial';
+}
+
+.price span {
+    display: block;
+}
+
+.packages button{
+  background-color: #093b67;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+
+.final{
+  background: url('images/images/notebook.jpg');
+  background-size: 1600px 1200px;
+  background-position: center;
+  background-attachment: scroll;
+  width: 1600px;
+  height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow:hidden;
+  position: relative;
+}
+
+.final::before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(9,59,103,0.8);
+  filter: brightness(0.8);
+}
+.market{
+  position: relative;
+  font-family: 'Montserrat';
+  color: white;
+  font-weight: normal;
+  padding-right: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+.Opta2{
+  position: relative;
+  font-size: 24px;
+}
+
+.name2{
+  position: relative;
+  font-weight: normal;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.market button {
+  position: relative;
+  background-color: #FFEA00;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.socials{
+  font-family: 'Montserrat';
+  background-color: rgb(31, 38, 46);
+  padding-top: 120px;
+  padding-bottom: 80px;
+  width: 1600px;
+  text-align: center;
+}
+
+.biz{
+  color: white;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+.address{
+  font-size: 10px;
+  padding-bottom: 30px;
+  color: Grey;
+}
+
+.access img{
+  justify-content: center;
+  padding: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+
+.ref{
+  height: 100vh;
+  padding: 20px;
+}

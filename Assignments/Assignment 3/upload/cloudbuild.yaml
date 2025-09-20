@@ -1,0 +1,44 @@
+steps:
+# Step 1: Build the backend
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/webtechass3-441707/backend', './backend']
+
+# Step 2: Push the backend image to Container Registry
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/webtechass3-441707/backend']
+
+# Step 3: Deploy the backend to Cloud Run
+- name: 'gcr.io/cloud-builders/gcloud'
+  args:
+  - 'run'
+  - 'deploy'
+  - 'backend-service'
+  - '--image'
+  - 'gcr.io/webtechass3-441707/backend'
+  - '--platform'
+  - 'managed'
+  - '--region'
+  - 'us-central1'
+  - '--allow-unauthenticated'
+
+# Step 4: Build the frontend
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/webtechass3-441707/frontend', './frontend']
+
+# Step 5: Push the frontend image to Container Registry
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/webtechass3-441707/frontend']
+
+# Step 6: Deploy the frontend to Cloud Run
+- name: 'gcr.io/cloud-builders/gcloud'
+  args:
+  - 'run'
+  - 'deploy'
+  - 'frontend-service'
+  - '--image'
+  - 'gcr.io/webtechass3-441707/frontend'
+  - '--platform'
+  - 'managed'
+  - '--region'
+  - 'us-central1'
+  - '--allow-unauthenticated'

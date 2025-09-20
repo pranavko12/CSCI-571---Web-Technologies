@@ -1,0 +1,11 @@
+# Ignore node_modules
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build artifacts
+build/
+dist/
+
+# Environment files
+.env
